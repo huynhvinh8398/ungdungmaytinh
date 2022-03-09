@@ -10,32 +10,34 @@
 
 <body>
     <h1>Caculator</h1>
-    <input type="text" id="idgiatriA" value="2">
-    <input type="text" id="idgiatriB" value="5">
-    <button type="button" onclick="tinhtong()">+</button>
-    <button type="button" onclick="tinhhieu()">-</button>
-    <button type="button" onclick="tinhtich()">*</button>
-    <button type="button" onclick="tinhthuong()">/</button>
+    <input type="text" id="idgiatriA" value="12">
+    <input type="text" id="idgiatriB" value="12"><br>
+    <div style="padding: 20px 0;">
+    <button type="button" onclick="tinhtong()">Addition(+)</button>
+    <button type="button" onclick="tinhhieu()">Subtraction(-)</button>
+    <button type="button" onclick="tinhtich()">Multiplication(x)</button>
+    <button type="button" onclick="tinhthuong()">Division(/)</button>
+    </div>
 </body>
 <Script>
-    function tinhtongAB(a , b) {
-        return a + b;
-    }
-    function tinhhieu(a , b) {
-        return a - b;
-    }
-    function tinhtichAB(a , b){
-        return a * b;
-    }   
+    // function tinhtong(a , b) {
+    //     return a + b;
+    // }
+    // function tinhhieu(a , b) {
+    //     return a - b;
+    // }
+    // function tinhtich(a , b){
+    //     return a * b;
+    // }   
     
-    function tinhthuongAB(a , b){
-        return a / b;
-    }
+    // function tinhthuong(a , b){
+    //     return a / b;
+    // }
     function tinhtong() {
         var a = document.getElementById("idgiatriA").value;
         var b = document.getElementById("idgiatriB").value;
-        console.log("Gia tri a", a);
-        console.log("Gia tri b", b);
+        // console.log("Gia tri a", a);
+        // console.log("Gia tri b", b);
         var tong = parseInt(a) + parseInt(b);
      alert("Tong " + tong); 
        
@@ -44,8 +46,8 @@
     function tinhhieu() {
         var a = document.getElementById("idgiatriA").value;
         var b = document.getElementById("idgiatriB").value;
-        console.log("gia tri a", a);
-        console.log("gia tri b", b);
+        // console.log("gia tri a", a);
+        // console.log("gia tri b", b);
         var hieu = parseInt(a) -parseInt(b);
         alert("hieu "  + hieu);
     }
